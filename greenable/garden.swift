@@ -9,7 +9,9 @@ import SwiftUI
 
 struct garden: View {
     var body: some View {
+        
         Text("Garden")
+        Text ("Hi")
     }
 }
 
