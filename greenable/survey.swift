@@ -183,7 +183,16 @@ struct survey: View {
                     .padding(20)
                     if showNewTask {
                         if (score <= 3) {
-                        
+                        u_r_seed()
+                        }
+                        else if (score <= 6){
+                        u_r_sprout()
+                        }
+                        else if (score <= 9){
+                        u_r_sapling()
+                        }
+                        else {
+                            u_r_tree()
                         }
                     }
                 }
