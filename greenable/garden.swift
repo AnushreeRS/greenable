@@ -3,7 +3,7 @@
 //  greenable
 //
 //  Created by Anushree RS on 7/29/25.
-// 🫘🌱🪴🌳
+//
 //
 
 import SwiftUI
@@ -48,21 +48,26 @@ struct garden: View {
                               Image("blueseed")
                                   .resizable()
                                   .scaledToFit()
-                                  .frame(width: 200, height: 150)
+                                  .frame(width: 400, height: 350)
                           } else if currentImageIndex == 1 {
                               Image("bluesprout")
                                   .resizable()
                                   .scaledToFit()
+                                  .frame(width: 400, height: 350)
                           } else if currentImageIndex == 2 {
                               Image("bluebud")
                                   .resizable()
                                   .scaledToFit()
+                                  .frame(width: 400, height: 350)
                           } else { // currentImageIndex == 3 or any other value
                               Image("blueflower")
                                   .resizable()
                                   .scaledToFit()
+                                  .frame(width: 400, height: 350)
                           }
-                    
+                Button("Change Image") {
+                                   currentImageIndex = (currentImageIndex + 1) % 4 // Cycle through 0, 1, 2, 3
+                               }
                 
             }
             
@@ -70,6 +75,7 @@ struct garden: View {
                 
         
         }
+   
     }
     
     
