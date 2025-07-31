@@ -11,7 +11,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 		2B5CCEC12E3A966200A2DE7B /* Exceptions for "greenable" folder in "greenable" target */ = {
+
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -24,7 +26,9 @@
 		8B486F5A2E394CA60084795F /* greenable */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+
 				2B5CCEC12E3A966200A2DE7B /* Exceptions for "greenable" folder in "greenable" target */,
+
 			);
 			path = greenable;
 			sourceTree = "<group>";
@@ -267,7 +271,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = greenable/Info.plist;
+
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
+
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -296,7 +302,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = greenable/Info.plist;
+
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
+
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
