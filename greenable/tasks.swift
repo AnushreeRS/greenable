@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct tasks: View {
+
+    
     var body: some View {
-        Text("Tasks")
+        Text("dailySeedT")
     }
 }
 
