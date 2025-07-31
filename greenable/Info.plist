@@ -4,9 +4,9 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>LibreBaskerville-Bold</string>
 		<string>Poppins-Bold</string>
 		<string>Poppins-SemiBold</string>
-		<string>LibreBaskerville-Bold</string>
 	</array>
 </dict>
 </plist>
