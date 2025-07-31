@@ -18,8 +18,11 @@ struct ContentView: View {
                     Text("Greenable🌱")
                         .font(.custom("LibreBaskerville-Bold",size: 60))
                         .foregroundColor(Color(red: 0.255, green: 0.53, blue: 0.35))
+                   
+                    Text("Big things often have small beginning...")
+                        .font(.custom("Poppins-SemiBold",size: 18))
+                        .foregroundColor(Color(red: 0.255, green: 0.53, blue: 0.35))
                         .padding(.bottom, 31.0)
-                    //.backgroundColor(Color(red: 0.255, green: 0.53, blue: 0.35))
                     
                     Text("Fact about Plastic")
                         .font(.custom("Poppins-SemiBold",size: 20))
@@ -81,9 +84,6 @@ struct ContentView: View {
                             
                         }
                     }
-                    Text("Big things often have small beginning...")
-                        .font(.custom("Poppins-SemiBold",size: 18))
-                        .foregroundColor(Color(red: 0.255, green: 0.53, blue: 0.35))
                     
                 }
                 
