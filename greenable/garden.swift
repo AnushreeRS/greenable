@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+//import = "tasks.swift"
 
 struct garden: View {
     @State private var currentImageIndex: Int = 0
@@ -24,7 +25,7 @@ struct garden: View {
                         .fontWeight(.bold)
                         .foregroundColor(Color(hue: 0.435, saturation: 0.888, brightness: 0.36))
                     Spacer()
-                    Text(" 🌱__leafpoints")
+                    Text(" 🌱leafpoints:\(counter)")
                         .fontWeight(.bold)
                         .foregroundColor(Color(hue: 0.435, saturation: 0.888, brightness: 0.36))
                         .padding()
@@ -67,7 +68,9 @@ struct garden: View {
                           }
                 Button("Change Image") {
                                    currentImageIndex = (currentImageIndex + 1) % 4 // Cycle through 0, 1, 2, 3
+                    //counter += 1
                                }
+                //leafPoints = (leafPoints + 1)
                 
             }
             

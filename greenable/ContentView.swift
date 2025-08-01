@@ -4,7 +4,7 @@
 //
 //  Created by Anushree RS on 7/29/25.
 //
-
+import SwiftData
 import SwiftUI
 
 
@@ -94,4 +94,6 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .modelContainer(for: LeafPoint.self, inMemory: true)
 }
+

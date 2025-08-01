@@ -12,6 +12,8 @@ struct greenableApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            
         }
+        .modelContainer(for: LeafPoint.self)
     }
 }
