@@ -70,7 +70,9 @@ struct garden: View {
                                }
                 
             }
-            
+            .navigationTitle("Results")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
     
                 
         
