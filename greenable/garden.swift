@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct garden: View {
-    @State private var currentImageIndex: Int = 0
+    @State private var point: Int = 0
     let imageNames: [String] = ["blueseed", "bluesprout", "bluebud", "blueflower"]
     var body: some View {
         ZStack{ Color (red: 0.969, green: 0.961, blue: 0.92)
@@ -44,29 +44,29 @@ struct garden: View {
             VStack{
            
         
-                if currentImageIndex == 0 {
+                if point == 0 {
                               Image("blueseed")
                                   .resizable()
                                   .scaledToFit()
                                   .frame(width: 400, height: 350)
-                          } else if currentImageIndex == 1 {
+                          } else if point == 1 {
                               Image("bluesprout")
                                   .resizable()
                                   .scaledToFit()
                                   .frame(width: 400, height: 350)
-                          } else if currentImageIndex == 2 {
+                          } else if point == 2 {
                               Image("bluebud")
                                   .resizable()
                                   .scaledToFit()
                                   .frame(width: 400, height: 350)
-                          } else { // currentImageIndex == 3 or any other value
+                          } else {
                               Image("blueflower")
                                   .resizable()
                                   .scaledToFit()
                                   .frame(width: 400, height: 350)
                           }
-                Button("Change Image") {
-                                   currentImageIndex = (currentImageIndex + 1) % 4 // Cycle through 0, 1, 2, 3
+                Button("grow") {
+                                   point = (point + 1) % 4
                                }
                 
             }
