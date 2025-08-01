@@ -9,13 +9,16 @@ import SwiftUI
 struct survey: View {
     @State private var score = 0
     @State private var selectedDestination: Int? = nil
+    
     var body: some View {
         NavigationView {
             ZStack {
                 Color(red: 0.97, green: 0.96, blue: 0.92)
                     .ignoresSafeArea()
+               
                 ScrollView {
-                    VStack(spacing: 10) {
+                    
+                VStack(spacing: 10) {
                         // Title
                         Text("Greenable")
                             .font(.custom("LibreBaskerville-Bold", size: 55))
@@ -26,9 +29,11 @@ struct survey: View {
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 18)
                         // Question 1
+                       
                         Text("1. On a scale of 1-4, how environmentally friendly do you think you are?")
                             .font(.custom("Source Sans Pro", size: 18))
                             .multilineTextAlignment(.leading)
+                       
                         HStack(spacing: 40) {
                             ForEach(1...4, id: \.self) { value in
                                 Button {
@@ -45,6 +50,7 @@ struct survey: View {
                             }
                         }
                         // Question 2
+                      
                         Text("2. Which task do you think would be the   easiest for you to complete?")
                             .font(.custom("Source Sans Pro", size: 18))
                             .multilineTextAlignment(.leading)
@@ -133,16 +139,12 @@ struct survey: View {
                         Button {
                             if score <= 4 {
                                 selectedDestination = 1
-                                level = "seed"
                             } else if score <= 6 {
                                 selectedDestination = 2
-                                level = "sprout"
                             } else if score <= 11 {
                                 selectedDestination = 3
-                                level = "sapling"
                             } else {
                                 selectedDestination = 4
-                                level = "tree"
                             }
                             print(score)
                             score = 0
