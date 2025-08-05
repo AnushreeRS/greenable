@@ -73,7 +73,9 @@ struct garden: View {
                 //leafPoints = (leafPoints + 1)
                 
             }
-            
+            .navigationTitle("Results")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarHidden(true)
     
                 
         

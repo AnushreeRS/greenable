@@ -74,7 +74,7 @@ struct tasks: View {
                 VStack(alignment: .center, spacing: 20) {
                     Text("Add task?")
                         .font(.headline)
-                    TextField("Click here!", text: $newTask)
+                    TextField("Click Generate Task!", text: $newTask)
                         .textFieldStyle(.roundedBorder)
                     Button("Save") {
                         let task = LeafPoint(point: newTask)
@@ -82,7 +82,7 @@ struct tasks: View {
                         newTask = ""
                     }
                     .bold()
-                    Button("Generate Random Task") {
+                    Button("Generate Task") {
                         generateTask(for: level)
                     }
                     HStack(){
