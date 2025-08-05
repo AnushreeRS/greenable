@@ -6,6 +6,7 @@
 ////
 
 import SwiftUI
+
 struct survey: View {
     @State private var score = 0
     @State private var selectedDestination: Int? = nil
